@@ -1,0 +1,115 @@
+.custom-icon-header {
+    padding-top: 5px;
+}
+.custom-search-input {
+    background-color: #0d2237;
+}
+#icon-header {
+    width: 75%;
+    height: 75%;
+}
+.custom-btn-search {
+    background-color: #ffffff;
+}
+.custom-btn-search >  form {
+    width: 100%;
+    background-color: #ffffff;
+}
+.custom-btn-search .glyphicon {
+    color: #28adeb;
+}
+.custom-btn-header {
+    padding-top: 0.1%;
+    color: #28adeb;
+}
+.custom-btn-header > li > a > span {
+    padding-left: 3px;
+}
+.custom-btn-header > li > a:hover , a:active , a:focus {
+    background-color: #0d1f31;
+    color: #2cbcfc;
+}
+.custom-btn-header-right {
+    padding-top: 1.1%;
+    color: #0d2237;
+}
+.custom-btn-header-right > button{
+    background-color: #0d2237;
+    color: #2cbcfc;
+    margin-right: 5px;
+    border: none;
+}
+.custom-navbar-top {
+    margin: 5px;
+    border: 0px;
+}
+.dropdown-menu {
+    background-color: #0f2236;
+}
+.dropdown-menu {
+    min-width: 200px;
+    background-color: #0f2236;
+    color: #066696;
+}
+.dropdown-menu.columns-2 {
+    min-width: 400px;
+}
+.dropdown-menu.columns-3 {
+    min-width: 600px;
+}
+.dropdown-menu li a {
+    padding: 5px 15px;
+    font-weight: 300;
+}
+.multi-column-dropdown {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.multi-column-dropdown li a {
+    display: block;
+    clear: both;
+    line-height: 1.428571429;
+    color: #066696;
+    white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+    text-decoration: none;
+    background-color: #0f2236;
+    color: #00a9f4;
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu.multi-column {
+        min-width: 240px !important;
+        overflow-x: hidden;
+    }
+}
+.nav .open > a:focus {
+    background-color: #0d1f31;
+    color: #2cbcfc;
+}
+.input-group{
+    border-radius: 5px;
+    color: #00a9f4;
+}
+.form-control-feedback {
+    top: 5px;
+    right: 15px;
+}
+.input-group > span{
+    border-radius: 5px;
+}
+.form-group > input::placeholder{
+    color: #046390;
+}
+.input-group {
+    width: 250px;
+}
+.form-control{
+    background-color: #0d2237;
+    border: 1px solid #0e2a42;
+}
+.form-group {
+    padding-top: 5px;
+}

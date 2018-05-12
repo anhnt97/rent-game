@@ -1,0 +1,21 @@
+html,body {
+    color: #28adeb;
+    background-color: #06162c;
+}
+.container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.row {
+    height: 100%;
+    margin: 0px;
+}
+.row h5 {
+   color: white;
+}
+.custom-page-header {
+    background-image:url("../images/background-header.png");
+    border-radius: 0px;
+    padding: 0px;
+}
