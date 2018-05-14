@@ -1,8 +1,5 @@
-
-
 <div class="main-content">
-
-        <div class="topnav" >
+        <div class="topnav topnav-home" >
             <a href="#home" >GAME PLATFORM</a>
             <a href="#news" class="active">Stream</a>
             <a href="#contact">Origin</a>
@@ -10,7 +7,6 @@
             <a href="#contact">Origin</a>
             <a href="#about">UPlay</a>
         </div>
-
         <div class="wrappre-order clearfix">
             <div class="order-button">
                 <button class="btn btn-primary">Sắp xếp theo</button>
@@ -19,12 +15,16 @@
                     <option>Ketchup</option>
                     <option>Relish</option>
                 </select>
-
             </div>
         </div>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4"></div>
+    </div>
+        <div class="row">
 
-        <div class="row list-group ">
-            <div class="item  col-xs-4 col-lg-4">
+            <div class="item  col-sm-4">
                 <div class="thumbnail">
 
                     <img class="group list-group-image" src="https://gamek4.mediacdn.vn/web_images/Ava-PUBG.jpg" alt="" />
@@ -39,8 +39,8 @@
                         </div>
                         <div class="user-action">
                             <ul>
-                                <li><button>***</button></li>
-                                <li><button class="btn btn-primary">Thêm vào giỏ hàng</button></li>
+                                <li><button><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></button></li>
+                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
                             </ul>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><button>***</button></li>
-                                <li><button class="btn btn-primary">Thêm vào giỏ hàng</button></li>
+                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
                             </ul>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><button>***</button></li>
-                                <li><button class="btn btn-primary">Thêm vào giỏ hàng</button></li>
+                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
                             </ul>
                         </div>
                     </div>
@@ -95,6 +95,7 @@
             </div>
             <div class="item  col-xs-4 col-lg-4">
                 <div class="thumbnail">
+
                     <img class="group list-group-image" src="https://gamek4.mediacdn.vn/web_images/Ava-PUBG.jpg" alt="" />
 
                     <div class="main-content-item">
@@ -108,7 +109,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><button>***</button></li>
-                                <li><button class="btn btn-primary">Thêm vào giỏ hàng</button></li>
+                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
                             </ul>
                         </div>
                     </div>
@@ -117,7 +118,9 @@
             </div>
             <div class="item  col-xs-4 col-lg-4">
                 <div class="thumbnail">
+
                     <img class="group list-group-image" src="https://gamek4.mediacdn.vn/web_images/Ava-PUBG.jpg" alt="" />
+
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
@@ -129,7 +132,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><button>***</button></li>
-                                <li><button class="btn btn-primary">Thêm vào giỏ hàng</button></li>
+                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
                             </ul>
                         </div>
                     </div>
@@ -138,7 +141,9 @@
             </div>
             <div class="item  col-xs-4 col-lg-4">
                 <div class="thumbnail">
+
                     <img class="group list-group-image" src="https://gamek4.mediacdn.vn/web_images/Ava-PUBG.jpg" alt="" />
+
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
@@ -150,7 +155,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><button>***</button></li>
-                                <li><button class="btn btn-primary">Thêm vào giỏ hàng</button></li>
+                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
                             </ul>
                         </div>
                     </div>
@@ -159,7 +164,9 @@
             </div>
             <div class="item  col-xs-4 col-lg-4">
                 <div class="thumbnail">
+
                     <img class="group list-group-image" src="https://gamek4.mediacdn.vn/web_images/Ava-PUBG.jpg" alt="" />
+
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
@@ -171,7 +178,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><button>***</button></li>
-                                <li><button class="btn btn-primary">Thêm vào giỏ hàng</button></li>
+                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
                             </ul>
                         </div>
                     </div>
@@ -180,7 +187,9 @@
             </div>
             <div class="item  col-xs-4 col-lg-4">
                 <div class="thumbnail">
+
                     <img class="group list-group-image" src="https://gamek4.mediacdn.vn/web_images/Ava-PUBG.jpg" alt="" />
+
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
@@ -192,7 +201,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><button>***</button></li>
-                                <li><button class="btn btn-primary">Thêm vào giỏ hàng</button></li>
+                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
                             </ul>
                         </div>
                     </div>
@@ -201,7 +210,9 @@
             </div>
             <div class="item  col-xs-4 col-lg-4">
                 <div class="thumbnail">
+
                     <img class="group list-group-image" src="https://gamek4.mediacdn.vn/web_images/Ava-PUBG.jpg" alt="" />
+
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
@@ -213,7 +224,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><button>***</button></li>
-                                <li><button class="btn btn-primary">Thêm vào giỏ hàng</button></li>
+                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
                             </ul>
                         </div>
                     </div>

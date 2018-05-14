@@ -8,7 +8,7 @@
     <title>Document</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/header/header.css" rel="stylesheet">
-    <link href="css/home/home/css" rel="stylesheet">
+    <link href="css/home/home.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -23,9 +23,10 @@
             <div class="col-md-1"></div>
 
         </div>
+        <div class="row custom-page-background"></div>
         <div class="row custom-page-content">
             <div class="col-md-1"></div>
-            <div class="col-md-10">
+            <div class="col-md-10 content">
                 @include('pages/home')
             </div>
             <div class="col-md-1"></div>
