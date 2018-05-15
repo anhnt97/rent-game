@@ -1,3 +1,7 @@
+.custom-page-content {
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .clearfix::after {
     content: "";
     clear: both;
@@ -13,8 +17,10 @@
  float: right;
  margin: 15px;
 }
+.order-button a {
+    color: #2cbcfc;;
+}
 .topnav-home {
-  overflow: hidden;
   background-image: url("../../images/background-header.png");
 
 }
@@ -108,24 +114,25 @@
     padding-left: 10px;
 
 }
-
-.pagination {
-    display: inline-block;
+.user-action li span {
+    color: #ff3d00;
 }
 
-.pagination a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
+.pagination > .active > a{
+    background-color: #00b1ff;
+    border-color: #00b1ff;
+}
+.pagination li a {
+    background-color: #0a5c81;
+    color: #fff;
+    border: none;
 }
 
-.pagination a.active {
-    background-color: blue;
-    color: white;
-}
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination a:hover:not(.active) {
+    background-color: #00b1ff;
+    color: #fff;
+}
 
 .title-game{
     margin: 15px;

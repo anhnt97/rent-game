@@ -17,7 +17,7 @@
     <div class="container">
         <div class="row custom-page-header">
             <div class="col-md-1"></div>
-            <div class="col-md-10">
+            <div class="col-md-10 header-item">
                 @include('header')
             </div>
             <div class="col-md-1"></div>
