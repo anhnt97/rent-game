@@ -36,28 +36,31 @@
 .custom-btn-header-right > button{
     background-color: #0d2237;
     color: #2cbcfc;
-    margin-right: 5px;
+    margin-right: 10px;
     border: none;
+}
+.custom-btn-header-right button span {
+    margin-right: 5px;
 }
 .custom-navbar-top {
     margin: 5px;
     border: 0px;
 }
-.dropdown-menu {
+.dropdown-menu-header {
     background-color: #0f2236;
 }
-.dropdown-menu {
+.dropdown-menu-header {
     min-width: 200px;
     background-color: #0f2236;
     color: #066696;
 }
-.dropdown-menu.columns-2 {
+.dropdown-menu-header.columns-2 {
     min-width: 400px;
 }
-.dropdown-menu.columns-3 {
+.dropdown-menu-header.columns-3 {
     min-width: 600px;
 }
-.dropdown-menu li a {
+.dropdown-menu-header li a {
     padding: 5px 15px;
     font-weight: 300;
 }

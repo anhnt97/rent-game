@@ -1,19 +1,22 @@
 <div class="main-content">
         <div class="topnav topnav-home" >
-            <a href="#home" >GAME PLATFORM</a>
-            <a href="#news" class="active">Stream</a>
-            <a href="#contact">Origin</a>
-            <a href="#about">UPlay</a>
-            <a href="#contact">Origin</a>
-            <a href="#about">UPlay</a>
+            <ul class="nav navbar-nav custom-btn-content">
+                <a href="#home" >GAME PLATFORM</a>
+                <a href="#news"><img src="../../images/steam.png">Stream</a>
+                <a href="#contact"><img src="../../images/Origin.png">Origin</a>
+                <a href="#about"><img src="../../images/Uplay-icon.png">UPlay</a>
+                <a href="#contact"><img src="../../images/Ubisoft_logo.png">Obisoft</a>
+                <a href="#about"><img src="../../images/gog.png">GOG</a>
+                <a href="#about"><img src="../../images/Blizzard-logo.png">Blizzard</a>
+            </ul>
         </div>
         <div class="wrappre-order clearfix">
             <div class="order-button">
-                <button class="btn btn-primary">Sắp xếp theo</button>
-                <select class="selectpicker dropup">
-                    <option>Mustard</option>
-                    <option>Ketchup</option>
-                    <option>Relish</option>
+                    <button class="btn btn-primary">Sắp xếp theo</button>
+                <select class="selectpicker custom-select">
+                    <option>Mặc định</option>
+                    <option>Từ cao xuống thấp</option>
+                    <option>Từ thấp lên cao</option>
                 </select>
             </div>
         </div>
@@ -24,7 +27,7 @@
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
-                                <li><span class="name-game">Tên game</span></li>
+                                <li><span class="name-game">Battlegrounds</span></li>
                                 <li><span class="text-price-old">Giá cũ</span></li>
                                 <li><span class="text-price-now">Giá now</span></li>
                             </ul>
@@ -224,10 +227,10 @@
     </div>
     <div class="bottom-content">
         <div class="wrapper-content">
-            <div class="topnav topnav-home" >
+            <div class="topnav topnav-home topnav-top" >
                 <div class="row">
-                    <div class="col-sm-3"><a href="">TOP GAME THUÊ NHIỀU</a></div>
-                    <div class="col-sm-6"><a href="">TOP GAME MỚI ĐƯỢC THUÊ GẦN NHẤT</a></div>
+                    <div class="col-sm-4"><a href="">TOP GAME THUÊ NHIỀU</a></div>
+                    <div class="col-sm-5"><a href="">TOP GAME MỚI ĐƯỢC THUÊ GẦN NHẤT</a></div>
                     <div class="col-sm-3"><a href="">TOP GAME MỚI NHẤT</a></div>
                 </div>
             </div>

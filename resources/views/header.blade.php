@@ -9,7 +9,7 @@
                 <li class="dropdown custom-dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="images/gamecata.png">
                         <span>Thể loại game</span> <span class="caret"></span></a>
-                    <ul class="dropdown-menu multi-column columns-2">
+                    <ul class="dropdown-menu dropdown-menu-header multi-column columns-2">
                         <div class="row">
                             <div class="col-sm-6">
                                 <ul class="multi-column-dropdown">
