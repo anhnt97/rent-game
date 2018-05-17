@@ -1,8 +1,9 @@
 .custom-icon-header {
     padding-top: 5px;
 }
-.custom-search-input {
+.input-sm{
     background-color: #0d2237;
+    border: 1px solid #0e2a42;
 }
 #icon-header {
     width: 75%;
@@ -109,10 +110,33 @@
 .input-group {
     width: 250px;
 }
-.form-control{
+.form-control .input-sm{
     background-color: #0d2237;
     border: 1px solid #0e2a42;
 }
 .form-group {
     padding-top: 5px;
+}
+/**
+    Css login form
+*/
+.lg-title {
+    text-align: center;
+}
+.btn-facebook {background: #3b5998;}
+.btn-twitter {background: #00aced;}
+.btn-google {background: #c32f10;}
+.socialButtons a {
+    color: white;
+    opacity: 0.9;
+}
+.row .loginOr {
+    margin: 10px;
+    text-align: center;
+}
+.loginForm .input-group {
+    margin-bottom: 15px;
+}
+.loginForm .input-group {
+   width: 100%;
 }
