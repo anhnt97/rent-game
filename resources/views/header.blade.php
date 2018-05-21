@@ -41,11 +41,12 @@
             </form>
             </div>
             <ul class="nav navbar-nav custom-btn-header-right">
-                <button class="btn btn-info btn-sm"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>  Tạo shop</button>
-                <button class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save" aria-hidden="true"></span>Tải phần mềm</button>
-                <button class="btn btn-info btn-sm"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Đăng nhập</button>
-                <button class="btn btn-info btn-sm"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>Yêu thích</button>
+                <button class="btn btn-info btn-sm"><i class="fas fa-shopping-cart"></i>  Tạo shop</button>
+                <button class="btn btn-info btn-sm"><i class="fas fa-download"></i>Tải phần mềm</button>
+                <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal"><i class="fas fa-user-circle"></i>Đăng nhập</button>
+                <button class="btn btn-info btn-sm"><i class="fas fa-heart"></i>Yêu thích</button>
             </ul>
         </div>
     </nav>
+    @include('pages/login')
 </div>

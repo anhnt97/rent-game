@@ -1,3 +1,5 @@
+@extends('master')
+@section('content')
 <div class="main-content">
         <div class="topnav topnav-home" >
             <ul class="nav navbar-nav custom-btn-content">
@@ -35,7 +37,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                             </ul>
                         </div>
                     </div>
@@ -48,7 +50,7 @@
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
-                                <li><span class="name-game">Tên game</span></li>
+                                <li><span class="name-game">Battlegrounds</span></li>
                                 <li><span class="text-price-old">Giá cũ</span></li>
                                 <li><span class="text-price-now">Giá now</span></li>
                             </ul>
@@ -56,7 +58,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                             </ul>
                         </div>
                     </div>
@@ -69,7 +71,7 @@
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
-                                <li><span class="name-game">Tên game</span></li>
+                                <li><span class="name-game">Battlegrounds</span></li>
                                 <li><span class="text-price-old">Giá cũ</span></li>
                                 <li><span class="text-price-now">Giá now</span></li>
                             </ul>
@@ -77,7 +79,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                             </ul>
                         </div>
                     </div>
@@ -90,7 +92,7 @@
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
-                                <li><span class="name-game">Tên game</span></li>
+                                <li><span class="name-game">Battlegrounds</span></li>
                                 <li><span class="text-price-old">Giá cũ</span></li>
                                 <li><span class="text-price-now">Giá now</span></li>
                             </ul>
@@ -98,7 +100,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                             </ul>
                         </div>
                     </div>
@@ -111,7 +113,7 @@
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
-                                <li><span class="name-game">Tên game</span></li>
+                                <li><span class="name-game">Battlegrounds</span></li>
                                 <li><span class="text-price-old">Giá cũ</span></li>
                                 <li><span class="text-price-now">Giá now</span></li>
                             </ul>
@@ -119,7 +121,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                             </ul>
                         </div>
                     </div>
@@ -132,7 +134,7 @@
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
-                                <li><span class="name-game">Tên game</span></li>
+                                <li><span class="name-game">Battlegrounds</span></li>
                                 <li><span class="text-price-old">Giá cũ</span></li>
                                 <li><span class="text-price-now">Giá now</span></li>
                             </ul>
@@ -140,7 +142,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                             </ul>
                         </div>
                     </div>
@@ -153,7 +155,7 @@
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
-                                <li><span class="name-game">Tên game</span></li>
+                                <li><span class="name-game">Battlegrounds</span></li>
                                 <li><span class="text-price-old">Giá cũ</span></li>
                                 <li><span class="text-price-now">Giá now</span></li>
                             </ul>
@@ -161,7 +163,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                             </ul>
                         </div>
                     </div>
@@ -174,7 +176,7 @@
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
-                                <li><span class="name-game">Tên game</span></li>
+                                <li><span class="name-game">Battlegrounds</span></li>
                                 <li><span class="text-price-old">Giá cũ</span></li>
                                 <li><span class="text-price-now">Giá now</span></li>
                             </ul>
@@ -182,7 +184,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                             </ul>
                         </div>
                     </div>
@@ -195,7 +197,7 @@
                     <div class="main-content-item">
                         <div class="info-game">
                             <ul>
-                                <li><span class="name-game">Tên game</span></li>
+                                <li><span class="name-game">Battlegrounds</span></li>
                                 <li><span class="text-price-old">Giá cũ</span></li>
                                 <li><span class="text-price-now">Giá now</span></li>
                             </ul>
@@ -203,7 +205,7 @@
                         <div class="user-action">
                             <ul>
                                 <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                             </ul>
                         </div>
                     </div>
@@ -225,7 +227,7 @@
         </div>
 
     </div>
-    <div class="bottom-content">
+<div class="bottom-content">
         <div class="wrapper-content">
             <div class="topnav topnav-home topnav-top" >
                 <div class="row">
@@ -270,7 +272,7 @@
                         <div class="main-content-item">
                             <div class="info-game">
                                 <ul>
-                                    <li><span class="name-game">Tên game</span></li>
+                                    <li><span class="name-game">Battlegrounds</span></li>
                                     <li><span class="text-price-old">Giá cũ</span></li>
                                     <li><span class="text-price-now">Giá now</span></li>
                                 </ul>
@@ -278,7 +280,7 @@
                             <div class="user-action">
                                 <ul>
                                     <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                    <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                    <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -291,7 +293,7 @@
                         <div class="main-content-item">
                             <div class="info-game">
                                 <ul>
-                                    <li><span class="name-game">Tên game</span></li>
+                                    <li><span class="name-game">Battlegrounds</span></li>
                                     <li><span class="text-price-old">Giá cũ</span></li>
                                     <li><span class="text-price-now">Giá now</span></li>
                                 </ul>
@@ -299,7 +301,7 @@
                             <div class="user-action">
                                 <ul>
                                     <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                    <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                    <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -312,7 +314,7 @@
                         <div class="main-content-item">
                             <div class="info-game">
                                 <ul>
-                                    <li><span class="name-game">Tên game</span></li>
+                                    <li><span class="name-game">Battlegrounds</span></li>
                                     <li><span class="text-price-old">Giá cũ</span></li>
                                     <li><span class="text-price-now">Giá now</span></li>
                                 </ul>
@@ -320,7 +322,7 @@
                             <div class="user-action">
                                 <ul>
                                     <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                    <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                    <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -333,7 +335,7 @@
                         <div class="main-content-item">
                             <div class="info-game">
                                 <ul>
-                                    <li><span class="name-game">Tên game</span></li>
+                                    <li><span class="name-game">Battlegrounds</span></li>
                                     <li><span class="text-price-old">Giá cũ</span></li>
                                     <li><span class="text-price-now">Giá now</span></li>
                                 </ul>
@@ -341,7 +343,7 @@
                             <div class="user-action">
                                 <ul>
                                     <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                    <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                    <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -354,7 +356,7 @@
                         <div class="main-content-item">
                             <div class="info-game">
                                 <ul>
-                                    <li><span class="name-game">Tên game</span></li>
+                                    <li><span class="name-game">Battlegrounds</span></li>
                                     <li><span class="text-price-old">Giá cũ</span></li>
                                     <li><span class="text-price-now">Giá now</span></li>
                                 </ul>
@@ -362,7 +364,7 @@
                             <div class="user-action">
                                 <ul>
                                     <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                    <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                    <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -375,7 +377,7 @@
                         <div class="main-content-item">
                             <div class="info-game">
                                 <ul>
-                                    <li><span class="name-game">Tên game</span></li>
+                                    <li><span class="name-game">Battlegrounds</span></li>
                                     <li><span class="text-price-old">Giá cũ</span></li>
                                     <li><span class="text-price-now">Giá now</span></li>
                                 </ul>
@@ -383,7 +385,7 @@
                             <div class="user-action">
                                 <ul>
                                     <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></li>
-                                    <li><button class="btn btn-primary btn-add">Thêm vào giỏ</button></li>
+                                    <li><button class="btn btn-primary btn-add">Thuê game</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -396,3 +398,5 @@
             </div>
         </div>
     </div>
+@endsection
+

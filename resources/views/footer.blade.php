@@ -22,9 +22,9 @@
                 <li>Địa chỉ:1060 Đường Láng - Đống Đa - Hà Nội</li>
                 <li>Hotline: 096.29.15988(24/7)</li>
             </ul>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled icon-connect">
                 <li>Kết nối</li>
-                <li><i class="fab fa-facebook-square"></i></li>
+                <li><i class="fab fa-facebook-square"></i><i class="fab fa-youtube"></i><i class="fab fa-google-plus"></i></li>
             </ul>
         </div>
         <div class="col-md-3">ảnh fb</div>

@@ -11,6 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('master');
-});
+Route::get('/', [
+    'as' => 'home' ,
+    'uses' => 'PageController@getHome'
+]);
+Route::get('/about-us',[
+   'as' => 'about-us',
+   'uses' => 'PageController@getAboutUs'
+]);
+Route::get('/contact',[
+   'as' => 'contact' ,
+   'uses' => 'PageController@getContact'
+]);
+Route::get('/chi-tiet-san-pham',[
+   'as' => 'product-details',
+   'uses' => 'PageController@getProductDetails'
+]);
