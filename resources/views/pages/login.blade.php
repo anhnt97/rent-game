@@ -35,16 +35,20 @@
                     <div class="row">
                         <div class="col-sm-2"></div>
                         <div class="col-sm-8">
-                            <form class="loginForm" action="" autocomplete="off" method="POST">
+                            <form class="loginForm" action="{{route('login')}}" autocomplete="off" method="POST">
+                                <input type="hidden" name="_token" value="{{csrf_token()}}">
+                                @if(Session::has('flag'))
+                                    <div class="alert alert-{{session()->get('flag')}}">{{session()->get('notification')}}</div>
+                                @endif
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fas fa-user"></i></span>
-                                    <input type="text" class="form-control" name="username" placeholder="Username or email">
+                                    <input type="text" class="form-control" name="username" placeholder="Username or email" required>
                                 </div>
                                 <span class="help-block"></span>
 
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fas fa-lock"></i></span>
-                                    <input  type="password" class="form-control" name="password" placeholder="Password">
+                                    <input  type="password" class="form-control" name="password" placeholder="Password" required>
                                 </div>
                                 <span class="help-block hidden">Password error</span>
                                 <div class="remember-me">

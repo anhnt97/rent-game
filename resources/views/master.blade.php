@@ -5,7 +5,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Rent Game</title>
+    <base href="{{asset('')}}">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="css/header/header.css" rel="stylesheet">
@@ -21,22 +22,16 @@
                 @include('header')
             </div>
             <div class="col-md-1"></div>
-
         </div>
-        <div class="row custom-page-background"></div>
         <div class="row custom-page-content">
-            <div class="col-md-1"></div>
-            <div class="col-md-10 content">
-                @yield('content')
-            </div>
-            <div class="col-md-1"></div>
+            @yield('content')
         </div>
         <div class="row custom-page-footer">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 footer">
                 @include('footer')
             </div>
-            <div class="col-md-1"></div>
+            <div class="col-md-2"></div>
         </div>
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>

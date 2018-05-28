@@ -27,3 +27,17 @@ Route::get('/chi-tiet-san-pham',[
    'as' => 'product-details',
    'uses' => 'PageController@getProductDetails'
 ]);
+Route::get('/the-loai-/{id_category}',[
+   'as' => 'category-games' ,
+   'uses' => 'PageController@getCategoryGame'
+]);
+// Dang nhap
+Route::post('login',[
+    'as' => 'login' ,
+    'uses' => 'LoginController@postLogin'
+]);
+// Dang ky
+Route::post('sign-up',[
+    'as' => 'dangki' ,
+    'uses' => 'LoginController@postSignUp'
+]);

@@ -1,6 +1,6 @@
 <div class="footer">
     <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-2 custom-col-md-2">
             <h5 class="font-weight-bold"><b>Thông tin</b></h5>
             <ul class="list-unstyled">
                 <li>Giới thiệu về DivineShop</li>
@@ -31,7 +31,6 @@
     </div>
     <hr>
     <div class="footer-copyright">
-        © 2018 Copyright
-        <a href="#"> DTS group </a>
+        © Copyright 2018 DTS group
     </div>
 </div>

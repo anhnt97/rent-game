@@ -1,6 +1,7 @@
-.custom-page-content {
-    padding-left: 50px;
-    padding-right: 50px;
+.content {
+    background-color: #0f2135;
+    margin-top: -150px;
+    padding: 0px;
 }
 .main-content{
     margin: 0px;
@@ -34,28 +35,33 @@
     width: 100%;
     height: 70px;
 }
-.custom-btn-content a:first-child{
-    padding-top: 2%;
+.custom-btn-content > li {
+    float: none;
+}
+.custom-btn-content li:first-child a{
+    padding-top: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
 }
 .info-game ul {
     padding-left: 0px;
 }
 
-.topnav-home a {
+.custom-btn-content li a {
     height: 100%;
-  float: left;
+    float: left;
   display: block;
   color: #36c1ff;
   text-align: center;
-  padding: 14px 25px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 
-.topnav a:hover {
+.topnav  li > a:hover {
   background-color: #07101a;
-  border-bottom: 5px solid;
+  border-bottom: 3px solid #166182;
 }
 
 
@@ -148,6 +154,12 @@
     background-color: #00b1ff;
     color: #fff;
 }
+.glyphicon-heart{
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    font-size: 25px;
+}
 
 .title-game{
     margin: 15px;
@@ -168,4 +180,10 @@
 .topnav-top a {
     width: 100%;
     height: 100%;
+}
+.topnav-top .col-sm-3 , .col-sm-4 , .col-sm-5 {
+    padding: 0px;
+}
+.text-menu-header{
+    padding-left: 5px;
 }

@@ -25,13 +25,8 @@ html,body {
     background: url("../images/bg.png") no-repeat;
     background-size: 100% 1078px;
 }
-.custom-page-content {
-    margin-top: -200px;
-}
-.custom-page-content .content {
-    background-color: #0f2135;
+.custom-page-footer .footer{
     padding: 0px;
 }
-.header-item {
-    padding-left: 20px;
-}
+
+/** CSS product -details */

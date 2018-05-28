@@ -41,10 +41,53 @@
             </form>
             </div>
             <ul class="nav navbar-nav custom-btn-header-right">
+                @if(Session::has('username'))
+                    <button class="btn btn-info btn-sm"><i class="fas fa-download"></i>Tải phần mềm</button>
+                    <div class="btn-group">
+                        <button class="btn btn-info btn-sm " type="button" data-toggle="dropdown" style="border-radius: 3px;"><div class="image-bg" ><img style="border-radius: 50%;" src="../../images/user.png" width="20px" height="18px" style="float: left"> <span class="name-user">{{Session::get('username')}}</span></div></button>
+                        <div class="dropdown-menu user-dropdown">
+                            <div class=" dropdown-item list-item">
+                                <a><div class="fix-image"><div class="image-user"><span class="name-user">{{Session::get('username')}}</span></div></div></a>
+
+                            </div>
+                            <div class=" dropdown-item list-item">
+                                <a><span class="title-dropdown-user">Số dư khả dụng</span> <span class="price-dropdown-user">300.000Đ</span></a>
+                            </div>
+                            <div class=" dropdown-item list-item">
+                                <a><span class="title-dropdown-user">Số dư Pending</span> <span class="price-dropdown-user">700.000Đ</span></a>
+                            </div>
+
+                            <div class="dropdown-item list-item" ><a>Quản lý Shop</a></div>
+                            <div class="dropdown-item list-item" id="history1"><a>Lịch sử giao dịch<span class='caret caret-right'></span></a>
+                                <div class="dropdown-popup dropdown-menu">
+                                    <div class="dropdown-item list-item" ><a>Quản lý Shop</a></div>
+                                    <div class="dropdown-item list-item" ><a>Quản lý Shop</a></div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-item list-item" id="history1"><a>Nạp tiền<span class='caret caret-right'></span></a>
+                                <div class="dropdown-popup dropdown-menu">
+                                    <div class="dropdown-item list-item" ><a>Quản lý Shop</a></div>
+                                    <div class="dropdown-item list-item" ><a>Quản lý Shop</a></div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-item list-item" id="history1"><a>Đăng xuất<span class='caret caret-right'></span></a>
+                                <div class="dropdown-popup dropdown-menu">
+                                    <div class="dropdown-item list-item" ><a>Quản lý Shop</a></div>
+                                    <div class="dropdown-item list-item" ><a>Quản lý Shop</a></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <button class="btn btn-info btn-sm"><i class="fas fa-heart"></i>Yêu thích</button>
+                @else
                 <button class="btn btn-info btn-sm"><i class="fas fa-shopping-cart"></i>  Tạo shop</button>
                 <button class="btn btn-info btn-sm"><i class="fas fa-download"></i>Tải phần mềm</button>
                 <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal"><i class="fas fa-user-circle"></i>Đăng nhập</button>
                 <button class="btn btn-info btn-sm"><i class="fas fa-heart"></i>Yêu thích</button>
+                @endif
             </ul>
         </div>
     </nav>

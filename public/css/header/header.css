@@ -1,5 +1,8 @@
+.header-item {
+    padding: 0px;
+}
 .custom-icon-header {
-    padding-top: 5px;
+    padding: 5px 0px 0px;
 }
 .input-sm{
     background-color: #0d2237;
@@ -23,6 +26,10 @@
     padding-top: 0.1%;
     color: #28adeb;
 }
+.custom-btn-header li a:focus {
+    background-color: #0d1f31;
+    color: #2cbcfc;
+}
 .custom-btn-header > li > a > span {
     padding-left: 3px;
 }
@@ -31,8 +38,9 @@
     color: #2cbcfc;
 }
 .custom-btn-header-right {
-    padding-top: 1.1%;
+    padding-top: 1.2%;
     color: #0d2237;
+    margin-left: 10px;
 }
 .custom-btn-header-right > button{
     background-color: #0d2237;
@@ -89,7 +97,7 @@
         overflow-x: hidden;
     }
 }
-.nav .open > a:focus {
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     background-color: #0d1f31;
     color: #2cbcfc;
 }
@@ -165,4 +173,70 @@
 .btn-google:hover {
     color: #fff;
     background-color:#6b1301;
+}
+ /** Css khi user da dang nhap */
+.btn-group{
+    position: relative;
+    margin-left: 10px;
+}
+.btn-group > button{
+    background-color: #0d2237;
+    color: #2cbcfc;
+    border: none;
+}
+.user-dropdown{
+    width: 240px;
+    position: absolute;
+    top:30px;
+    background-image: url(../../images/background-header.png);
+}
+.price-dropdown-user{
+    float:right;
+    color: white;
+    font-size: 15px;
+}
+.image-user {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #3e3e3e;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url(https://vignette.wikia.nocookie.net/inazuma-eleven/images/8/8c/Saruyuu.png/revision/latest?cb=20130829025426&path-prefix=vi);
+    margin-bottom: 10px;
+}
+.image-user span{
+    position: absolute;
+    right: -70px;
+    top:20px;
+}
+.list-item{
+    border-bottom: 1px solid blue;
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+.dropdown-popup{
+    display: none;
+    top:-7px;
+    left: 210px;
+    position: absolute;
+    z-index: 99999;
+    background-color: #0d2237;
+    color: #2cbcfc;
+    text-align: center;
+}
+#history1:hover .dropdown-popup{
+    display:inline-block;
+}
+.caret-right {
+    border-left: 4px solid;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    float: right;
+    margin-top: 8px;
 }
