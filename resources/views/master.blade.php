@@ -23,9 +23,7 @@
             </div>
             <div class="col-md-1"></div>
         </div>
-        <div class="row custom-page-content">
             @yield('content')
-        </div>
         <div class="row custom-page-footer">
             <div class="col-md-2"></div>
             <div class="col-md-8 footer">
@@ -36,5 +34,7 @@
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="js/detail.js"></script>
 </body>
 </html>

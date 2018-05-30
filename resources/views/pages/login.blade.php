@@ -1,5 +1,5 @@
 <!-- Model-->
-<div class="modal fade" id="myModal" role="dialog">
+<div class="modal fade" id="loginModal" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
@@ -62,8 +62,8 @@
                         <div class="col-sm-2"></div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-8"><p class="register-text">Chưa có tài khoản? <a href="#">ĐĂNG KÝ</a></p></div>
-                        <div class="col-sm-4">Khôi phục mật khẩu</div>
+                        <div class="col-sm-8"><p class="register-text">Chưa có tài khoản? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">ĐĂNG KÝ</a></p></div>
+                        <div class="col-sm-4"><a>Khôi phục mật khẩu</a></div>
                     </div>
                 </div>
                 <div class="col-sm-1">
@@ -71,11 +71,8 @@
                         <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                     </button>
                 </div>
-                <div class="row omb_row-sm-offset-3">
+                <div class="row">
                     <div class="col-xs-12 col-sm-3">
-                        <p class="omb_forgotPwd">
-                            <a href="#"></a>
-                        </p>
                     </div>
                 </div>
             </div>
@@ -83,3 +80,4 @@
 
     </div>
 </div>
+@include('pages.register')

@@ -85,8 +85,10 @@
                 @else
                 <button class="btn btn-info btn-sm"><i class="fas fa-shopping-cart"></i>  Tạo shop</button>
                 <button class="btn btn-info btn-sm"><i class="fas fa-download"></i>Tải phần mềm</button>
-                <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal"><i class="fas fa-user-circle"></i>Đăng nhập</button>
-                <button class="btn btn-info btn-sm"><i class="fas fa-heart"></i>Yêu thích</button>
+                <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user-circle"></i>Đăng nhập</button>
+                <button class="btn btn-info btn-sm"><i class="fas fa-heart"></i>Yêu thích
+                                        <div class="fixed-notifi"><div class="notification"><span>1</span></div></div>
+                                        </button>
                 @endif
             </ul>
         </div>

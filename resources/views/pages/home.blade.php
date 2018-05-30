@@ -1,20 +1,26 @@
 @extends('master')
 @section('content')
+<div class="row custom-page-content">
     <div class="row custom-page-background"></div>
     <div class="col-md-2"></div>
     <div class="col-md-8 content">
         <div class="main-content">
-            <div class="topnav topnav-home" >
-                <ul class="nav navbar-nav custom-btn-content">
-                    <li><a href="#home">GAME PLATFORM</a></li>
-                    <li><a href="#news"><img src="../../images/steam.png"><span class="text-menu-header" >Stream</span></a></li>
-                    <li><a href="#contact"><img src="../../images/Origin.png"><span class="text-menu-header">Origin</span></a></li>
-                    <li><a href="#about"><img src="../../images/Uplay-icon.png"><span class="text-menu-header">UPlay</span></a></li>
-                    <li><a href="#contact"><img src="../../images/Ubisoft_logo.png"><span class="text-menu-header">Obisoft</span></a></li>
-                    <li><a href="#about"><img src="../../images/gog.png"><span class="text-menu-header">GOG</span></a></li>
-                    <li><a href="#about"><img src="../../images/Blizzard-logo.png"><span class="text-menu-header">Blizzard</span></a></li>
-                </ul>
-            </div>
+            <section ng-controller="">
+                <div class="menu-top">
+                    <ul>
+                        <li  ng-class="{active:panel.isSelected('description')}"><a  class="menu-title" ng-click="panel.setTab('description')" href="#" style="padding-top: 25px;">GAME PLATFORM</a></li>
+                        <li  ng-class="{active:panel.isSelected('specification')}"><a ng-click="panel.setTab('specification')" href><img src="../../images/steam.png"><span class="text-menu-header" >Stream</span></a></li>
+                        <li  ng-class="{active:panel.isSelected('review')}"><a ng-click="panel.setTab('review')" href><img src="../../images/Origin.png"><span class="text-menu-header">Origin</span> </a></li>
+                        <li  ng-class="{active:panel.isSelected('review')}"><a ng-click="panel.setTab('review')" href><img src="../../images/Uplay-icon.png"><span class="text-menu-header">UPlay</span></a></li>
+                        <li  ng-class="{active:panel.isSelected('review')}"><a ng-click="panel.setTab('review')" href><img src="../../images/Ubisoft_logo.png"><span class="text-menu-header">Obisoft</span> </a></li>
+                        <li  ng-class="{active:panel.isSelected('review')}"><a ng-click="panel.setTab('review')" href><img src="../../images/gog.png"><span class="text-menu-header">GOG</span> </a></li>
+                        <li  ng-class="{active:panel.isSelected('review')}" style="width:16.5%;"><a style="padding-top:25px;" ng-click="panel.setTab('review')" href><img src="../../images/Blizzard-logo.png"><span class="text-menu-header">Blizzard</span> </a></li>
+                    </ul>
+                </div>
+
+
+            </section>
+
             <div class="wrappre-order clearfix">
                 <div class="order-button">
                     <button class="btn btn-primary">Sắp xếp theo</button>
@@ -25,6 +31,7 @@
                     </select>
                 </div>
             </div>
+            
             <div class="row">
                 <div class="item  col-sm-4">
                     <div class="thumbnail">
@@ -39,7 +46,15 @@
                             </div>
                             <div class="user-action">
                                 <ul>
-                                    <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                   <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -59,7 +74,15 @@
                             </div>
                             <div class="user-action">
                                 <ul>
-                                    <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                    <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -79,7 +102,15 @@
                             </div>
                             <div class="user-action">
                                 <ul>
-                                    <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                    <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -99,7 +130,15 @@
                             </div>
                             <div class="user-action">
                                 <ul>
-                                    <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                    <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -119,7 +158,15 @@
                             </div>
                             <div class="user-action">
                                 <ul>
-                                    <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                    <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -139,7 +186,15 @@
                             </div>
                             <div class="user-action">
                                 <ul>
-                                    <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                    <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -159,7 +214,15 @@
                             </div>
                             <div class="user-action">
                                 <ul>
-                                    <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                    <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -179,7 +242,15 @@
                             </div>
                             <div class="user-action">
                                 <ul>
-                                    <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                   <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -199,7 +270,15 @@
                             </div>
                             <div class="user-action">
                                 <ul>
-                                    <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                    <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -223,13 +302,17 @@
         </div>
         <div class="bottom-content">
             <div class="wrapper-content">
-                <div class="topnav topnav-home topnav-top" >
-                    <div class="row">
-                        <div class="col-sm-4" style="padding: 0px"><a href="">TOP GAME THUÊ NHIỀU</a></div>
-                        <div class="col-sm-5" style="padding: 0px"><a href="">TOP GAME MỚI ĐƯỢC THUÊ GẦN NHẤT</a></div>
-                        <div class="col-sm-3" style="padding: 0px"><a href="">TOP GAME MỚI NHẤT</a></div>
+               <section ng-controller="">
+                     <div class="menu-top">
+                        <ul>
+                            <div class="row">
+                                <li class="col-sm-4" ng-class="{active:panel.isSelected('description')}"><a  ng-click="panel.setTab('description')" style="padding-top: 25px;">TOP GAME THUE NHIEU</a></li>
+                                <li class="col-sm-5" ng-class="{active:panel.isSelected('specification')}"><a ng-click="panel.setTab('specification')" style="padding-top: 25px;"  >TOP GAME MOI DUOC THUE GAN NHAT</a></li>
+                                <li class="col-sm-3" ng-class="{active:panel.isSelected('review')}"><a ng-click="panel.setTab('review')" style="padding-top: 25px;"  >TOP GAME MOI NHAT</a></li>
+                            </div>
+                        </ul>
                     </div>
-                </div>
+            </section>
 
                 <div class="row list-group clearfix">
                     <div class="item  col-sm-12">
@@ -273,7 +356,15 @@
                                 </div>
                                 <div class="user-action">
                                     <ul>
-                                        <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                       <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                     </ul>
                                 </div>
                             </div>
@@ -293,7 +384,15 @@
                                 </div>
                                 <div class="user-action">
                                     <ul>
-                                        <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                        <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                     </ul>
                                 </div>
                             </div>
@@ -313,7 +412,15 @@
                                 </div>
                                 <div class="user-action">
                                     <ul>
-                                        <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                        <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                     </ul>
                                 </div>
                             </div>
@@ -333,7 +440,15 @@
                                 </div>
                                 <div class="user-action">
                                     <ul>
-                                        <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                        <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                     </ul>
                                 </div>
                             </div>
@@ -353,7 +468,15 @@
                                 </div>
                                 <div class="user-action">
                                     <ul>
-                                        <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                        <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                     </ul>
                                 </div>
                             </div>
@@ -373,7 +496,15 @@
                                 </div>
                                 <div class="user-action">
                                     <ul>
-                                        <li><button class="btn btn-primary btn-add">Thuê game<span class="glyphicon glyphicon-heart"  aria-hidden="true" ></span></button></li>
+                                        <li>
+                                        <button class="btn btn-primary btn-add">Thuê game
+                                                <a><span class="glyphicon glyphicon-heart"  aria-hidden="true" >
+                                                    <div class="content-like">Thêm vào yêu thích</div>
+                                                    </span>
+                                                </a>
+                                        </button>
+
+                                    </li>
                                     </ul>
                                 </div>
                             </div>
@@ -388,5 +519,6 @@
         </div>
     </div>
     <div class="col-md-8"></div>
+</div>
 @endsection
 

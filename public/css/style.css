@@ -29,4 +29,224 @@ html,body {
     padding: 0px;
 }
 
+
+
 /** CSS product -details */
+.content-detail{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.custom-btn-header-right{
+            float: right;
+        }
+        .clearfix{
+            clear: both;
+        }
+        .top-content{
+        position: relative;
+        }
+        .item-detail{
+        position: absolute;
+        bottom: 0;
+        }
+        .inner-item{
+        margin: 20px 30px;
+        }
+        .detail-game{
+        color: white;
+        margin: 15px;
+        }
+        .button-rent{
+        background-color:rgba(0,0,0,0);
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-right: 5px;
+        padding: 10px 15px;
+        }
+        .sale-number{
+        background-color: rgba(255, 0, 0, 0.8);
+        border-radius: 5px;
+        font-size: 15px;
+        padding: 5px;
+        }
+
+        .text-price-old{
+            font-size: 15px;
+            color : #ff8800;
+            text-decoration:line-through;
+        }
+        .text-price-now{
+        font-size: 20px;
+          color :#ff8800;
+        }
+        .image-bg image{
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index:-1;
+
+        }
+        .name-user{
+        margin: 5px;
+        }
+        .fixed-notifi{
+        position: relative;
+        }
+        .notification{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -20px;
+        top:-35px;
+        background-color: red;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 50%;
+        text-align: center;
+        padding: 0px 5px;
+        }
+        .image-detail{
+        background-color: #3e3e3e;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url(https://cdn.trangcongnghe.com/uploads/posts/2018-01/tan-man-ve-qua-trinh-phat-trien-cua-god-of-war-sap-ra-mat_1.jpg);
+        height: 600px;
+        }
+
+
+
+        /*bottom content css*/
+        .bottom-content{
+            margin-top: 15px;
+             background-color:#020F20;
+        }
+       .menu-bottom ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-image: url(../../images/background-header.png);
+        }
+        .menu-bottom li {
+            float: left;
+        }
+        .menu-bottom li a {
+            display: inline-block;
+            text-align: center;
+            padding: 25px 30px;
+            text-decoration: none;
+            color: #28adeb;
+             border-bottom: 5px solid;
+             border-color: transparent;
+        }
+        .menu-bottom li a:hover {
+            background-color: #07101a;
+            border-bottom: 5px solid;
+        }
+        .custom-panel{
+            margin: 20px;
+            background-color:#020F20; /*Chinh lai mau */
+            color: white;
+            border-radius: 0px;
+            height: 250px;
+            border-bottom: 1px solid #1E425C; /*Chinh lai mau */
+        }
+        .thumbnail
+        {
+            border: none;
+            padding: 0px;
+            position: relative;
+            margin: 10px;
+            height: 200px;
+        }
+        .thumbnail>img {
+            height: 200px;
+        }
+
+        .row{
+            margin: 0;
+        }
+        .item{
+            padding:0;
+            position: relative;
+            height: 200px;
+            margin-bottom: 10px
+        }
+        .item.list-group-item
+        {
+            float: none;
+            width: 100%;
+            background-color: #fff;
+
+        }
+        .item.list-group-item img
+        {
+            float: left;
+        }
+        .item.list-group-item:after
+        {
+            clear: both;
+        }
+
+        .info-game {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .info-game ul{
+             list-style-type: none;
+             margin: 0;
+        }
+        .info-game ul li{
+            padding-left: 10px;
+            font-size: medium;
+        }
+        .name-game{
+            color: #ffffff;
+        }
+        .user-action{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color:white;
+        }
+        .user-action ul{
+            margin-right: 5px   ;
+        }
+        .user-action li{
+            display: inline-block;
+            padding-left: 10px;
+
+        }
+        .user-action li span {
+            color: #ff3d00;
+        }
+        .title-game{
+            margin: 15px;
+        }
+        .content-game{
+            margin: 15px;
+        }
+        .btn-add {
+            background-color: rgba(0,117,255,0.3);
+            font-size: medium;
+            position: relative;
+        }
+        .btn-add:hover {
+            background-color: #00b1ff;
+        }
+        .glyphicon-heart{
+            position: absolute;
+            top: 5px;
+            left: -33px;
+            font-size: 25px;
+        }
+        .wrapper-list-item{
+            padding: 10px;
+        }

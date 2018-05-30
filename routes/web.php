@@ -27,7 +27,7 @@ Route::get('/chi-tiet-san-pham',[
    'as' => 'product-details',
    'uses' => 'PageController@getProductDetails'
 ]);
-Route::get('/the-loai-/{id_category}',[
+Route::get('/the-loai/{id_category}',[
    'as' => 'category-games' ,
    'uses' => 'PageController@getCategoryGame'
 ]);
@@ -37,7 +37,7 @@ Route::post('login',[
     'uses' => 'LoginController@postLogin'
 ]);
 // Dang ky
-Route::post('sign-up',[
-    'as' => 'dangki' ,
-    'uses' => 'LoginController@postSignUp'
+Route::post('register',[
+    'as' => 'register' ,
+    'uses' => 'LoginController@postRegister'
 ]);

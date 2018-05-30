@@ -174,10 +174,18 @@
     color: #fff;
     background-color:#6b1301;
 }
+/** Css Register */
+.registerForm .input-group {
+    margin-bottom: 15px;
+}
+.registerForm .input-group {
+    width: 100%;
+}
  /** Css khi user da dang nhap */
+
 .btn-group{
     position: relative;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 .btn-group > button{
     background-color: #0d2237;
@@ -185,7 +193,7 @@
     border: none;
 }
 .user-dropdown{
-    width: 240px;
+    width: 215px;
     position: absolute;
     top:30px;
     background-image: url(../../images/background-header.png);
@@ -210,8 +218,8 @@
 }
 .image-user span{
     position: absolute;
-    right: -70px;
-    top:20px;
+    right: -90px;
+    top: 15px;
 }
 .list-item{
     border-bottom: 1px solid blue;
@@ -223,7 +231,7 @@
 .dropdown-popup{
     display: none;
     top:-7px;
-    left: 210px;
+    left: 190px;
     position: absolute;
     z-index: 99999;
     background-color: #0d2237;
@@ -240,3 +248,21 @@
     float: right;
     margin-top: 8px;
 }
+.fixed-notifi{
+        position: relative;
+        }
+        .notification{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -20px;
+        top:-35px;
+        background-color: red;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 50%;
+        text-align: center;
+        padding: 0px 5px;
+        }
