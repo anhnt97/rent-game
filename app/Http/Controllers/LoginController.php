@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Exception\ServerException;
 use Illuminate\Http\Request;
 
@@ -15,8 +16,7 @@ class LoginController extends Controller
      * @return \Illuminate\Http\RedirectResponse
      */
     public function postLogin(Request $request){
-        //$this->activeAccount($request->get('username'));
-        $this->listUser();
+        $this->activateAccount($request->get('username'));
         $data_request = [
             'userName' => $request->get('username'),
             'password' => $request->get('password')
@@ -27,7 +27,7 @@ class LoginController extends Controller
                 'json' => $data_request
             ]);
         }catch (ServerException $e){
-            dd($e->getCode());
+            dd($e->getMessage());
         }
 
         if ($response->getStatusCode() == '200'){
@@ -83,6 +83,12 @@ class LoginController extends Controller
             dd($response->getStatusCode());
         }catch (ServerException $e){
             dd($e->getCode());
+        }
+        catch (RequestException $requestException){
+            if ($requestException->getResponse()->getStatusCode() == '400') {
+                echo "Got response 400";
+            }
+
         }
     }
 
