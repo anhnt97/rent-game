@@ -4,21 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class GameAccountController extends Controller
+class GameController extends Controller
 {
-
-    /**
-     * @param Request $request
-     * @return mixed
-     */
+    protected $url = "203.162.166.162:8083/GameApi/game";
     public function postCreate(Request $request){
-
         $data_request = [
-            'gameId' => $request->get('gameId'),
-            'account'  => $request->get('gameAccount'),
-            'password' => $request->get('gamePassword'),
-            'rentTime' => $request->get('GameRentTime'),
-            'rentExpireTime' => $request->get('gameRentExpireTime')
+            'storeId' => $request->get('storeIdGame'),
+            'name'  => $request->get('nameGame'),
+            'description' => $request->get('descriptionGame'),
+            'thumbImage' => $request->get('thumbImageGame')
         ];
         $client = new Client(['base_uri' => $this->url]);
         try{
@@ -32,13 +26,9 @@ class GameAccountController extends Controller
             return $response;
         }
     }
-
-    /**
-     * @return mixed
-     */
-    public function getListGameAccount(Request $request){
+    public function getListGameByStore(Request $request){
         $data_request = [
-            'gameId' => $request->get('gameId')
+            'storeId' => $request->get('storeIdGame')
         ];
         $client = new Client(['base_uri' => $this->url]);
         try{
@@ -52,15 +42,10 @@ class GameAccountController extends Controller
             return $response;
         }
     }
-
-    /**
-     * @param Request $request
-     * @return mixed
-     */
-    public function deleteGameAccount(Request $request){
+    public function deleteGame(Request $request){
         $data_request = [
-            'gameId' => $request->get('gameId'),
-            'id' => $request->get('idAccount')
+            'storeId' => $request->get('storeId'),
+            'id' => $request->get('idGame')
         ];
         $client = new Client(['base_uri' => $this->url]);
         try{
@@ -74,6 +59,4 @@ class GameAccountController extends Controller
             return $response;
         }
     }
-
-
 }
