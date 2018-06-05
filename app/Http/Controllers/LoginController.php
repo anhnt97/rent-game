@@ -9,8 +9,14 @@ use Illuminate\Http\Request;
 class LoginController extends Controller
 {
     protected $url = "203.162.166.162:8083/GameApi/";
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
     public function postLogin(Request $request){
-        $this->activeAccount($request->get('username'));
+        //$this->activeAccount($request->get('username'));
+        $this->listUser();
         $data_request = [
             'userName' => $request->get('username'),
             'password' => $request->get('password')
@@ -31,6 +37,11 @@ class LoginController extends Controller
             return redirect()->back()->with(['flag'=> 'login-fail','notification'=>'Đăng nhập thất bại']);
         }
     }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|int
+     */
     public function postRegister(Request $request){
         $data_request = [
             'userName' => $request->get('username'),
@@ -44,7 +55,7 @@ class LoginController extends Controller
                 'json' => $data_request
             ]);
             if ($response->getStatusCode() == '200'){
-                $this->activeAccount($data_request['userName']);
+                $this->activateAccount($data_request['userName']);
                 return redirect()->back()->with(['flag'=> 'register-success','notification'=>'Đăng ký thành công']);
             }
             else{
@@ -57,9 +68,10 @@ class LoginController extends Controller
     }
 
     /**
+     * Activate user after register
      * @param String $username
      */
-    public function activeAccount(String $username){
+    public function activateAccount(String $username){
         $data_request = [
             'userName' => $username
         ];
@@ -73,6 +85,28 @@ class LoginController extends Controller
             dd($e->getCode());
         }
     }
+
+    /**
+     * @param String $username
+     */
+    public function deactivateAccount(String $username){
+        $data_request = [
+            'userName' => $username
+        ];
+        $client = new Client(['base_uri' => $this->url]);
+        try{
+            $response = $client->put('user/disactive',[
+                'json' => $data_request
+            ]);
+            dd($response->getStatusCode());
+        }catch (ServerException $e){
+            dd($e->getCode());
+        }
+    }
+
+    /**
+     * Get list user
+     */
     public function listUser(){
         $client = new Client(['base_uri' => $this->url]);
         try{
